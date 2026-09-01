@@ -1,0 +1,64 @@
+:root {
+  color-scheme: light dark;
+  --background: #fbfaf7;
+  --surface: #ffffff;
+  --text: #202124;
+  --muted: #62676f;
+  --line: #dfe2e6;
+  --accent: #0a66c2;
+  --code: #f0f2f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #15171a;
+    --surface: #1d2024;
+    --text: #eceff3;
+    --muted: #a8afb9;
+    --line: #343941;
+    --accent: #70b5f9;
+    --code: #272b31;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 18px/1.7 ui-serif, Georgia, Cambria, "Times New Roman", serif;
+}
+
+main {
+  width: min(46rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 4rem 0 6rem;
+}
+
+.hero, .article-header { margin-bottom: 3rem; }
+.eyebrow { margin: 0; color: var(--accent); font: 700 0.78rem/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+h1, h2, h3 { font-family: ui-sans-serif, system-ui, sans-serif; line-height: 1.2; letter-spacing: -0.02em; }
+h1 { margin: 0.4rem 0 1rem; font-size: clamp(2.3rem, 8vw, 4.5rem); }
+h2 { margin: 3rem 0 1rem; font-size: 1.55rem; }
+h3 { margin: 2.2rem 0 0.8rem; font-size: 1.18rem; }
+p, ul, ol, blockquote, pre { margin: 0 0 1.25rem; }
+a { color: var(--accent); text-decoration-thickness: 0.08em; text-underline-offset: 0.14em; }
+nav { margin-bottom: 3rem; font: 600 0.9rem/1.4 ui-sans-serif, system-ui, sans-serif; }
+.dek, .hero > p:last-child { color: var(--muted); font-size: 1.15rem; }
+
+.article-list { list-style: none; margin: 0; padding: 0; }
+.article-list li { padding: 1.4rem 0; border-top: 1px solid var(--line); }
+.article-list a { font: 700 1.2rem/1.35 ui-sans-serif, system-ui, sans-serif; }
+.summary { display: block; margin-top: 0.35rem; color: var(--muted); }
+.empty { color: var(--muted); font-style: italic; }
+
+blockquote { padding-left: 1.2rem; border-left: 3px solid var(--accent); color: var(--muted); }
+code, pre { background: var(--code); border-radius: 0.35rem; }
+code { padding: 0.12em 0.35em; font-size: 0.88em; }
+pre { overflow-x: auto; padding: 1rem; }
+pre code { padding: 0; background: transparent; }
+
+@media (max-width: 40rem) {
+  main { padding-top: 2.5rem; }
+}

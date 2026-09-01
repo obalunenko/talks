@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Article Edit"
+  short_description: "Edit a LinkedIn article without losing voice"
+  default_prompt: "Use $linkedin-article-edit to review and improve this LinkedIn article draft."
