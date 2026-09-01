@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Article Release"
+  short_description: "Prepare and record a LinkedIn article release"
+  default_prompt: "Use $linkedin-article-release to prepare this article for publication and update the repository."

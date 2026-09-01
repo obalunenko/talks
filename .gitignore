@@ -13,3 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Generated article site and local editor files
+_site/
+.DS_Store
+__pycache__/
+*.pyc
